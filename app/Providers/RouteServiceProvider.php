@@ -1,5 +1,6 @@
 <?php namespace App\Providers;
 
+use File;
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
@@ -38,6 +39,12 @@ class RouteServiceProvider extends ServiceProvider {
 		$router->group(['namespace' => $this->namespace], function($router)
 		{
 			require app_path('Http/routes.php');
+
+			$local_routes = app_path('Http/local_routes.php');
+			if ($this->app->environment('local') && File::exists($local_routes))
+			{
+				require $local_routes;
+			}
 		});
 	}
 
