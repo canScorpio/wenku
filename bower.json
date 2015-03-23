@@ -1,0 +1,21 @@
+{
+  "name": "wenku",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sky31/wenku",
+  "authors": [
+    "heimonsy <heimonsy@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "resources/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.4",
+    "jquery": "~1.11.0",
+    "Bootflat": "~2.0.4"
+  }
+}

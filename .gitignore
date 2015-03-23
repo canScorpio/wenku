@@ -1,4 +1,5 @@
 /vendor
 /node_modules
-.env
 /app/Http/local_routes.php
+.env
+/.sass-cache
