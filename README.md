@@ -1,5 +1,7 @@
 ## 湘大文库
 
+[![Build Status](https://api.travis-ci.org/sky31/wenku.svg?branch=master)](https://travis-ci.org/sky31/wenky)
+
 ## 简介
 
 ### 需求和环境
